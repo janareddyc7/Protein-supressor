@@ -751,7 +751,7 @@ class EnhancedMutationDataProcessor:
             c_term = protein_df[protein_df['position'] > 2*length/3]
             
             logger.info(f"\n{protein.upper()}:")
-          for region_df, region_name in [(n_term, 'N-terminal'), (middle, 'Middle'), (c_term, 'C-terminal')]:
+            for region_df, region_name in [(n_term, 'N-terminal'), (middle, 'Middle'), (c_term, 'C-terminal')]:
                 if len(region_df) > 0:
                     pathogenic_rate = region_df['ml_target'].mean()
                     logger.info(f"  {region_name}: {len(region_df)} mutations, {pathogenic_rate:.1%} pathogenic")
