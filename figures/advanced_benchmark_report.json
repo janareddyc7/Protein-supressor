@@ -1,0 +1,156 @@
+{
+  "timestamp": "2025-07-24 12:38:34",
+  "analyzer_info": {
+    "model_loaded": true,
+    "model_type": "Booster",
+    "features_count": 27
+  },
+  "dataset_info": {
+    "total_mutations": 380,
+    "proteins_tested": [
+      "alpha_synuclein",
+      "tau",
+      "sod1",
+      "amyloid_beta"
+    ],
+    "class_distribution": {
+      "0": 329,
+      "1": 51
+    }
+  },
+  "evaluation_results": {
+    "model_performance": {
+      "accuracy": 0.13421052631578947,
+      "precision": 0.13421052631578947,
+      "recall": 1.0,
+      "f1_score": 0.23665893271461716,
+      "matthews_corr": 0.0,
+      "auc_roc": 0.6334108111329638,
+      "auc_pr": 0.4507167359237816,
+      "cv_auc_mean": 0.6334108111329638,
+      "cv_auc_std": 0.0
+    },
+    "baseline_comparison": {
+      "Random_Forest": {
+        "auc_roc": 1.0,
+        "accuracy": 1.0,
+        "f1_score": 1.0
+      },
+      "Logistic_Regression": {
+        "auc_roc": 0.9951129387925384,
+        "accuracy": 0.9921052631578947,
+        "f1_score": 0.9702970297029703
+      },
+      "Charge_Heuristic": {
+        "auc_roc": 0.7321056082007271,
+        "accuracy": 0.8315789473684211,
+        "f1_score": 0.0
+      },
+      "Random": {
+        "auc_roc": 0.5004469873055605,
+        "accuracy": 0.4789473684210526,
+        "f1_score": 0.2204724409448819
+      },
+      "Your_ML_Model": {
+        "auc_roc": 0.6334108111329638,
+        "accuracy": 0.13421052631578947,
+        "f1_score": 0.23665893271461716
+      }
+    },
+    "literature_validation": {
+      "suppressor_accuracy": 1.0,
+      "pathogenic_accuracy": 0.0,
+      "overall_accuracy": 0.6666666666666666,
+      "results": {
+        "suppressors": [
+          {
+            "mutation": "A30P",
+            "protein": "alpha_synuclein",
+            "predicted_score": 1.0,
+            "source": "Polymeropoulos_1997",
+            "correct_prediction": true
+          },
+          {
+            "mutation": "E46K",
+            "protein": "alpha_synuclein",
+            "predicted_score": 1.0,
+            "source": "Zarranz_2004",
+            "correct_prediction": true
+          },
+          {
+            "mutation": "A53E",
+            "protein": "alpha_synuclein",
+            "predicted_score": 1.0,
+            "source": "Computational_prediction",
+            "correct_prediction": true
+          },
+          {
+            "mutation": "A53D",
+            "protein": "alpha_synuclein",
+            "predicted_score": 1.0,
+            "source": "Computational_prediction",
+            "correct_prediction": true
+          },
+          {
+            "mutation": "P301S",
+            "protein": "tau",
+            "predicted_score": 0.9904714865522685,
+            "source": "Hutton_1998",
+            "correct_prediction": "True"
+          },
+          {
+            "mutation": "K280D",
+            "protein": "tau",
+            "predicted_score": 1.0,
+            "source": "Computational_prediction",
+            "correct_prediction": true
+          },
+          {
+            "mutation": "G93D",
+            "protein": "sod1",
+            "predicted_score": 1.0,
+            "source": "Computational_prediction",
+            "correct_prediction": true
+          },
+          {
+            "mutation": "G46R",
+            "protein": "sod1",
+            "predicted_score": 1.0,
+            "source": "Computational_prediction",
+            "correct_prediction": true
+          }
+        ],
+        "pathogenic": [
+          {
+            "mutation": "A53T",
+            "protein": "alpha_synuclein",
+            "predicted_score": 0.9878759076559123,
+            "source": "Polymeropoulos_1997",
+            "correct_prediction": "False"
+          },
+          {
+            "mutation": "P301L",
+            "protein": "tau",
+            "predicted_score": 0.9973104321926953,
+            "source": "Hutton_1998",
+            "correct_prediction": "False"
+          },
+          {
+            "mutation": "G93A",
+            "protein": "sod1",
+            "predicted_score": 0.9921695085756096,
+            "source": "Rosen_1993",
+            "correct_prediction": "False"
+          },
+          {
+            "mutation": "A673V",
+            "protein": "amyloid_beta",
+            "predicted_score": 0.992680650239411,
+            "source": "Levy_1990",
+            "correct_prediction": "False"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-07-24 14:25:05",
+  "data_info": {
+    "samples": 33493,
+    "features": 20,
+    "class_balance": [
+      28813,
+      4680
+    ]
+  },
+  "evaluation_results": {
+    "model_evaluation": {
+      "auc_scores_mean": 0.971133142220842,
+      "auc_scores_std": 0.01349759468479385,
+      "accuracy_scores_mean": 0.9516317954070861,
+      "accuracy_scores_std": 0.00331374472733395,
+      "f1_scores_mean": 0.8306416552935405,
+      "f1_scores_std": 0.016694939865944617,
+      "precision_scores_mean": 0.812739372941634,
+      "precision_scores_std": 0.022169809441885277,
+      "recall_scores_mean": 0.8523504273504272,
+      "recall_scores_std": 0.05045360029517487,
+      "mcc_scores_mean": 0.8037545448312878,
+      "mcc_scores_std": 0.018966912755686842,
+      "overall_auc": 0.9653695350893663
+    },
+    "baseline_comparison": {
+      "Random_Forest": {
+        "auc": 0.9728787716987625,
+        "accuracy": 0.9498407643312102,
+        "f1": 0.8203848895224519
+      },
+      "Logistic_Regression": {
+        "auc": 0.8720154519842165,
+        "accuracy": 0.8943073248407644,
+        "f1": 0.49763481551561023
+      },
+      "SVM": {
+        "auc": 0.9194172859721217,
+        "accuracy": 0.9070461783439491,
+        "f1": 0.5500963391136802
+      },
+      "Our_Optimized_Model": {
+        "auc": 0.9800414891807766,
+        "accuracy": 0.953125,
+        "f1": 0.8413607275176828
+      }
+    }
+  }
+}
